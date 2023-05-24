@@ -1,0 +1,57 @@
+object formMenuPrincipal: TformMenuPrincipal
+  Left = 192
+  Top = 125
+  Width = 1305
+  Height = 675
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'SysMercado'
+  Color = clBtnHighlight
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    BiDiMode = bdLeftToRight
+    ParentBiDiMode = False
+    Left = 568
+    Top = 280
+    object Inicias1: TMenuItem
+      Caption = 'Inicias'
+      object Venda1: TMenuItem
+        Caption = 'Venda'
+      end
+      object Pagamento1: TMenuItem
+        Caption = 'Pagamento'
+      end
+    end
+    object Cadastrar1: TMenuItem
+      Caption = 'Cadastrar'
+      object Funcionarios1: TMenuItem
+        Caption = 'Cadastrar Funcionarios'
+        OnClick = Funcionarios1Click
+      end
+      object Produtos1: TMenuItem
+        Caption = 'Cadastrar Produtos'
+      end
+    end
+    object Relatrios1: TMenuItem
+      Caption = 'Relat'#243'rios'
+    end
+    object Sistemas1: TMenuItem
+      Caption = 'Sistemas'
+      object ConfigSistemas1: TMenuItem
+        Caption = 'Config. Sistemas'
+      end
+    end
+    object Ajuda1: TMenuItem
+      Caption = 'Ajuda'
+    end
+  end
+end
